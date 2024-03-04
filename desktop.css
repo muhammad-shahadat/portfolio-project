@@ -1,0 +1,128 @@
+.col-1{width:8.33%;}
+.col-2{width:16.66%;}
+.col-3{width:25%;}
+.col-4{width:33.33%;}
+.col-5{width:41.66%;}
+.col-6{width:50%;}
+.col-7{width:58.33%;}
+.col-8{width:66.66%;}
+.col-9{width:75%;}
+.col-10{width:83.33%;}
+.col-11{width:91.66%;}
+.col-12{width:100%;}
+
+[class*="col-"]{
+    float:left;
+    padding: 10px;
+    
+
+}
+.nav-logo{
+    text-align: left;
+}
+.nav-title{
+    text-align:right;
+}
+.nav-menu{
+   text-align: right; 
+   display: flex;
+   flex-direction: row;
+   justify-content:flex-end;
+   margin-top: 23px;
+   
+}
+.nav-menu a{
+    margin:5px;
+    background-color:transparent;
+}
+/* profile design starts here */
+
+.prof-desc p{
+    text-align: center;
+    width:50%;
+    margin:0 auto;
+    color:gray;
+    font-size: 1.1rem;
+    
+    
+}
+.img1 img{
+    margin-right:200px;
+    width:'';
+    transition:width 2s,transform 2s ;
+    transform:rotate (360deg);
+}
+.img1 img:hover{
+    width: 140px;
+    
+}
+.img2 img{
+    margin-left:250px;
+    width:'';
+    transition:width 2s,transform 2s ;
+    transform:rotate (360deg);
+}
+.img2 img:hover{
+    width: 140px;
+    
+}
+/* profile design ends here */
+
+/* about me design starts here */
+.image img{
+    height: 200px;
+    width: 190px;
+    margin-top:50px;
+
+}
+.desc p{
+    text-align:left;
+}
+/* about me design ends here */
+
+
+/* professional skill design starts here */
+.skill-container{
+    padding:1% 5%;
+}
+/* professional skill design starts here */
+
+/* contact design starts here */
+.contact-container{
+    padding: 15px;
+}
+.contact button{
+    width: 150px;
+}
+/* for centering */
+.more-contact{
+    position:relative;
+    
+    
+
+}
+.more-contact .btn{
+    
+     position: absolute;
+     margin-top:150px;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);
+    
+}
+.more-contact .btn button{
+    margin:15px 10px;
+  
+}
+
+/* contact design ends here */
+
+/* footer design starts here */
+.foot-menu{
+    display:inline;
+    margin-top:22px;
+
+}
+
+
+/* footer design ends here */

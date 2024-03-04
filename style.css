@@ -1,0 +1,487 @@
+*{
+    box-sizing:border-box;
+}
+
+body{
+    margin:0;
+}
+
+/* navbar design starts here */
+img{
+    height: 100px;
+    width: 100px;
+    
+    
+}
+.nav-title h1{
+    text-align:center;
+    font-size: 2.5rem;
+    margin:0;
+    padding-top: 20px;
+    color: white;
+
+    
+    
+}
+
+.nav-menu a{
+
+
+    text-decoration: none;
+    font-size: 1.5rem;
+    color:white;
+    padding: 10px; 
+    text-transform: uppercase;
+    border-radius: 10px;
+    background-color:#0f5062;
+    margin:5px 0;
+    
+
+
+}
+.nav-menu{
+    margin-top: 10px;
+    padding: 15px;
+    display: flex;
+    flex-direction:column;
+    
+
+    
+}
+
+
+.navbar{
+    background-color: #0f5961;
+    padding:10px 30px;
+    text-align:center;
+    
+}
+.nav-menu a:hover{
+    background-color:darkorange;
+}
+/* navbar design ends here */
+
+/* float clear */
+.navbar::after{
+    clear:both;
+    display: table;
+    content:'';
+}
+
+[class*="col-"]{
+    width:100%;
+
+}
+/* profile design starts here */
+.profile{
+    padding: 100px 20px;
+}
+.prof-desc{
+    text-align:center
+}
+.img1{
+    text-align: right;
+    
+}
+.img1 img{
+    transition: transform 2.5s;
+}
+.img2 img{
+    transition: transform 2.5s;
+}
+.img1 img:hover{
+    transform:rotate(360deg);
+    
+}
+.img2 img:hover{
+    transform:rotate(360deg);
+}  
+.img2{
+    text-align: left;
+}
+.prof-desc p{
+    text-align: center;
+    width:80%;
+    margin:0 auto;
+    color:gray;
+    
+}
+.prof-desc h1{
+    font-family: 'Satisfy', cursive;
+    font-size:3rem;
+}
+.profile::after{
+    content: '';
+    display: table;
+    clear:both;
+
+
+}
+/* profile design ends here */
+
+/* about me design starts here */
+.about-me{
+    text-align: center;
+    background-color: #0f5961;
+    color:white;
+    padding: 2% 8%;
+    font-size: 1.2rem;
+}
+.about-me h2{
+    text-transform: uppercase;
+
+}
+.dotted-hr{
+    width: 60px;
+    border:dotted;
+    border-bottom:none;
+    border-width: 5px;
+    
+    
+    
+}
+.common-hr{
+    border:solid 1px white;
+}
+.image img{
+    height: 150px;
+    width: 140px;
+    border-radius: 50%;
+    border:solid 3px white;
+}
+.about-me a{
+    text-decoration: none;
+    color:white;
+}
+.cv-button{
+    padding: 10px;
+    border:none;
+    border-radius:5px;
+    background-color:darkred;
+    color:white;
+    cursor:pointer;
+    font-size:1rem;
+    margin: 15px;
+    text-align: center;
+}
+
+
+
+/* about-me float clear */
+.about-me::after{
+    display: table;
+    clear:both;
+    content: '';
+}
+/* about me design ends here */
+
+/* professional experience  design starrts here */
+.work-experience .card{
+    background-color: gray;
+    margin:5px;
+    padding:5px;
+    border-radius:5px;
+    transition: .2s;
+    height: 500px;
+}
+
+
+.icon{
+    text-align: center;
+    
+}
+.icon img{
+    height: 70px;
+    width: 70px;
+    margin-top: 10px;
+    border:solid 3px white;
+    border-radius:50%;
+    padding: 10px;
+    
+}
+.work-experience h2{
+    text-align: center;
+    background-color: #0f5062;
+}
+.work-experience a{
+    text-decoration: none;
+    font-size: 1.2rem;
+    color:white;
+}
+.work-experience .card:hover{
+    box-shadow: 0 5px 8px 5px  black;
+    
+    
+}
+.education-and-training .card{
+    background-color: gray;
+    margin: 5px;
+    padding:5px;
+    border-radius: 5px;
+    transition: .2s;
+    height: 500px;
+
+}
+.education-and-training h2{
+    text-align: center;
+    background-color: #0f5062;
+}
+.education-and-training a{
+    text-decoration: none;
+    font-size: 1.2rem;
+    color:white;
+
+}
+.education-and-training .card:hover{
+    box-shadow: 0 5px 8px 5px  black;
+    
+}
+.skill .card{
+    background-color: gray;
+    margin: 5px;
+    padding:5px;
+    border-radius: 5px;
+    height: 500px;
+    transition:.2s;
+
+}
+.skill .card:hover{
+    box-shadow: 0 5px 8px 5px  black;
+
+}
+.skill .card h2{
+    text-align: center;
+    background-color: #0f5062;
+
+}
+ul li{
+    list-style-type: none;
+    font-size: 1.5rem;
+    margin-top:25px;
+    font-weight: bolder;
+    position:relative;
+    
+}
+ ul li::before{
+    content:'';
+    position:absolute;
+    left:0;
+    top:calc(100% + 5px);
+    background-color:rgb(188, 230, 230, .5 );
+    width:100%;
+    height: 10px;
+    border-radius: 50px; 
+}
+ li::after{
+    content:'';
+    position:absolute;
+    left:0;
+    top:calc(100% + 5px);
+    background-color:rgb(188, 230, 230, 1 );
+    width:0;
+    height: 10px;
+    border-radius: 50px; 
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+    animation-iteration-count:1;
+}
+ ul .html::after{
+    animation-name: html;
+
+}
+ul .css::after{
+    animation-name: css;
+
+}
+ul .js::after{
+    animation-name: js;
+
+}
+ul .bt::after{
+    animation-name: bootstrap;
+
+}
+ul .react::after{
+    animation-name: react;
+}
+
+
+@keyframes html {
+    to{
+        width:90%;
+    }
+    
+}
+@keyframes css {
+    to{
+         width: 70%;
+    }   
+}
+@keyframes bootstrap {
+   to{
+    width:50%;
+
+   }
+    
+}
+@keyframes js {
+    to{
+        width:40%;
+    }
+    
+}
+@keyframes react {
+    to{
+        width:20%;
+    }
+    
+}
+
+/* float clear */
+.skill-container::after{
+    display: table;
+    clear:both;
+    content:'';
+
+}
+/* professional experience design ends here  */
+
+/* contact design starts here */
+.contact-container{
+    background-color: steelblue;
+    
+
+}
+.achivement{
+    color:white;
+    padding:5px;
+}
+
+ .achivement h2{
+    text-align: center;
+    color:white;
+    text-transform:uppercase; 
+}
+
+
+.dot-hr{
+    width: 70px;
+    border-style:dotted;
+    border-width:5px;
+    border-radius: 50px;
+    border-bottom:none;
+    
+}
+.contact{
+    color:white;
+    padding:5px;
+    text-align: center;
+
+}
+.contact h2{
+    text-align: center;
+    color:white;
+    text-transform:uppercase; 
+
+}
+input,textarea{
+    margin:10px 0;
+    border:none;
+    border-radius: 5px;
+    padding:5px;
+    width: 100%;
+    text-align: center;
+    font-size: 1rem;
+    resize: none;
+}
+
+    form button{
+        margin:15px;
+        padding:10px;
+        width:100px;
+        background-color:black;
+        color:white;
+        border:none;
+        border-radius: 5px;
+        cursor:pointer;
+    }
+.more-contact{
+    color:white;
+    padding:5px;
+    text-align: center;
+   
+}
+.more-contact h2{
+    text-align: center;
+    color:white;
+    text-transform:uppercase; 
+
+}
+    .more-contact button{
+        cursor:pointer;
+        margin:30px 5px;
+        padding: 15px;
+        font-size: 1.2rem;
+        border:none;
+        border-radius:50px; 
+        width:50px;
+        height: 50px;
+     
+    }
+    .more-contact button:hover{
+        background-color: gray;
+
+    }
+    /* float clear */
+    .contact-container::after{
+        content:'';
+        display: table;
+        clear:both;
+    }
+   
+
+/* contact design starts here */
+
+/* footer design starts here */
+.footer{
+    background-color:black;
+    
+}
+.foot-menu a{
+    text-decoration: none;
+    margin:10px;
+    color:white;
+
+}
+.foot-menu{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+    
+}
+.foot-desc{
+    color:white;
+    text-align: center;
+    margin-top:10px;
+    
+}
+
+
+
+.footer::after{
+    clear: both;
+    display:table;
+    content:'';
+
+}
+/* footer design ends here */
+
+
+
+
+
+
+
